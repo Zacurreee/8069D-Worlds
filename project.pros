@@ -1,7 +1,7 @@
 {
     "py/object": "pros.conductor.project.Project",
     "py/state": {
-        "project_name": "8059D ChangeUp",
+        "project_name": "8069D Worlds",
         "target": "v5",
         "templates": {
             "kernel": {
