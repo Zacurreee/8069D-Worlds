@@ -111,7 +111,9 @@ void opcontrol()
 			if(master.get_digital(DIGITAL_L2))
 			{
 			Topindexer.move(-127);
-			}else
+			Btmindexer.move(-127);
+			}
+			else
 			{
 			Btmindexer.move(-127);
 			}
@@ -121,13 +123,15 @@ void opcontrol()
 			Btmindexer.move(115);
 			Topindexer.move(127);
 			}
-			else if(master.get_digital(DIGITAL_L1) && master.get_digital(DIGITAL_B))
+			else if(master.get_digital(DIGITAL_B))
 			{
-			Topindexer.move(50);
+			Topindexer.move(100);
+			Btmindexer.move(127);
 			}
 			else
 			{
 			Btmindexer.move(15);
+			Topindexer.move(0);
 			}
 			}
 
