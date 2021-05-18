@@ -80,47 +80,6 @@ void blue2(){
 }
 
 void red2(){
-  timerBase(115, 127, 100);
-  delay(700);
-  intakeMove(-127);
-  baseMove(-29, 1000);
-  delay(10);
-  baseTurn(-52, 1000);
-  // first goal
-  indexerMove(127);
-  baseMove(-3, 1000);
-  baseTurn(90, 1000);
-  indexerMove(0);
-  baseMove(-23, 1000);
-  // timerBase();
-  // baseMove();hi
-  // flywheelMove(127);
-  // indexerMove(127);
-  // delay(700);
-  // flywheelMove(0);
-  // indexerMove(0);
-  // baseMove();
-  // intakeMove(127);
-  // indexerMove(127);
-  // delay(100);
-  // intakeMove(0);
-  // baseTurn();
-  // baseMove();
-  // flywheelMove(127);
-  // delay(550);
-  // flywheelMove(0);
-  // indexereMove(0);
-  // baseMove();
-  // intakeMove(127);
-  // indexerMove(127);
-  // delay(100);
-  // indexerMove(0);
-  // baseTurn();
-  // baseMove();
-  // baseTurn();
-  // timerBase();
-  // intakeMove(-120);
-  // baseTurn();
-  //indexerMove(-127);
+
 
 }

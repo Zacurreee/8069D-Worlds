@@ -40,7 +40,7 @@ void competition_initialize() {}
 
 //auton
 void autonomous() {
-	int autonNum = 3;
+	int autonNum = 1;
 		switch (autonNum){
 			case 1: blue1(); break;
 			case 2: blue2(); break;
@@ -115,9 +115,13 @@ void opcontrol()
 			{
 			Btmindexer.move(115);
 			}
+			else if(master.get_digital(DIGITAL_L1) && master.get_digital(DIGITAL_B))
+			{
+			Topindexer.move(100);
+			}
 			else
 			{
-			Btmindexer.move(15);
+			Btmindexer.move(15);	
 			}
 			}
 
