@@ -48,7 +48,7 @@ void red1(){
   delay(5);
   baseTurn(70,1000);
   delay(5);
-  baseMove(-38,2000);
+  baseMove(-39,2000);
   delay(10);
   // first ball
   indexerMove(0);
@@ -66,7 +66,7 @@ void red1(){
   baseTurn(46, 1000);
   baseMove(-70, 3000);
   intakeMove(0);
-  baseTurn(-140, 1000);
+  baseTurn(-139, 1000);
   baseMove(32, 1000);
   intakeMove(-127);
   indexerMove(127);
