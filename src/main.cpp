@@ -40,7 +40,7 @@ void competition_initialize() {}
 
 //auton
 void autonomous() {
-	int autonNum = 1;
+	int autonNum = 3;
 		switch (autonNum){
 			case 1: blue1(); break;
 			case 2: blue2(); break;
