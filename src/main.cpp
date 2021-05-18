@@ -40,7 +40,7 @@ void competition_initialize() {}
 
 //auton
 void autonomous() {
-	int autonNum = 3;
+	int autonNum = 1;
 		switch (autonNum){
 			case 1: blue1(); break;
 			case 2: blue2(); break;
@@ -102,18 +102,28 @@ void opcontrol()
 
 
 		{
-			Topindexer.move((master.get_digital(DIGITAL_L1) - master.get_digital(DIGITAL_L2))* 127);
 			if(master.get_digital(DIGITAL_R1))
 			{
 			Btmindexer.move(127);
 			}
 			else if (master.get_digital(DIGITAL_R2) || master.get_digital(DIGITAL_L2))
 			{
+			if(master.get_digital(DIGITAL_L2))
+			{
+			Topindexer.move(-127);
+			}else
+			{
 			Btmindexer.move(-127);
+			}
 			}
 			else if(master.get_digital(DIGITAL_L1))
 			{
 			Btmindexer.move(115);
+			Topindexer.move(127);
+			}
+			else if(master.get_digital(DIGITAL_L1) && master.get_digital(DIGITAL_B))
+			{
+			Topindexer.move(50);
 			}
 			else
 			{
