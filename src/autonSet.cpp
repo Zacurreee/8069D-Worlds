@@ -13,7 +13,7 @@ void blue1(){
     baseMove(-38.5,2000);
     delay(10);
     // first ball
-    baseTurn(96, 1000);
+    baseTurn(94, 1000);
     indexerMove(0);
     delay(5);
     baseMove(-22.8,1000);
@@ -26,7 +26,7 @@ void blue1(){
     // third goal
     baseMove(-32,1000);
     baseTurn(46, 1000);
-    baseMove(-69, 3000);
+    baseMove(-73, 3000);
     baseTurn(-137, 1000);
     baseMove(33, 1000);
     intakeMove(-60);
