@@ -100,59 +100,36 @@ void opcontrol()
 		FR.move(right);
 		BR.move(right);
 
-
+		Topindexer.move((master.get_digital(DIGITAL_L1) - master.get_digital(DIGITAL_L2))* 127);
+		if(master.get_digital(DIGITAL_R1))
 		{
-			if(master.get_digital(DIGITAL_R1))
-			{
 			Btmindexer.move(127);
-			}
-			else if (master.get_digital(DIGITAL_R2) || master.get_digital(DIGITAL_L2))
-			{
-			if(master.get_digital(DIGITAL_L2))
-			{
-			Topindexer.move(-127);
+		}
+		else if (master.get_digital(DIGITAL_R2) || master.get_digital(DIGITAL_L2))
+		{
 			Btmindexer.move(-127);
-			}
-			else
-			{
-			Btmindexer.move(-127);
-			}
-			}
-			else if(master.get_digital(DIGITAL_L1))
-			{
+		}
+		else if(master.get_digital(DIGITAL_L1))
+		{
 			Btmindexer.move(115);
-			Topindexer.move(127);
-			}
-			else if(master.get_digital(DIGITAL_B))
-			{
-			Topindexer.move(100);
-			Btmindexer.move(127);
-			}
-			else
-			{
+		}
+		else if(master.get_digital(DIGITAL_L1) && master.get_digital(DIGITAL_B))
+		{
+			Topindexer.move(115);
+			Btmindexer.move(120);
+		}
+		else
+		{
 			Btmindexer.move(15);
-			Topindexer.move(0);
-			}
-			}
-
-
-
+		}
 		//Intakes/Indexer
 
 		Rintake.move((master.get_digital(DIGITAL_R1) - master.get_digital(DIGITAL_R2))* 127);
 		Lintake.move((master.get_digital(DIGITAL_R1) - master.get_digital(DIGITAL_R2))* 127);
-
-
-
-
-
 		// Debugging
-	// master.print(2, 0, "%.2f\n", (BL.get_position() - BR.get_position()) * INCH_PER_DEG / 2 / TO_RAD / BASE_WIDTH );
-   // master.print(2, 0, "%.2f\n", BL.get_position()*INCH_PER_DEG, BR.get_position()*INCH_PER_DEG);
+		// master.print(2, 0, "%.2f\n", (BL.get_position() - BR.get_position()) * INCH_PER_DEG / 2 / TO_RAD / BASE_WIDTH );
+   	// master.print(2, 0, "%.2f\n", BL.get_position()*INCH_PER_DEG, BR.get_position()*INCH_PER_DEG);
 		delay(5);
-
-
-		    delay(5);
-
+		delay(5);
 	}
  }

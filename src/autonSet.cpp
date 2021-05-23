@@ -8,9 +8,9 @@ void blue1(){
   baseMove(-29,1000);
   flywheelMove(0);
   delay(5);
-  baseTurn(69,1000);
+  baseTurn(71,1000);
   delay(5);
-  baseMove(-38.5,2000);
+  baseMove(-38.7,2000);
   delay(10);
   // first ball
   baseTurn(96, 1000);
@@ -25,9 +25,9 @@ void blue1(){
   intakeMove(-127);
   // third goal
   baseMove(-32,1000);
-  baseTurn(43, 1000);
+  baseTurn(45, 1000);
   baseMove(-73, 3000);
-  baseTurn(-137, 1000);
+  baseTurn(-132, 1000);
   baseMove(33, 1000);
   intakeMove(-60);
   indexerMove(127);
@@ -46,15 +46,15 @@ void red1(){
   baseMove(-29.5,1000);
   flywheelMove(0);
   delay(5);
-  baseTurn(70,1000);
+  baseTurn(71,1000);
   delay(5);
   baseMove(-39,2000);
   delay(10);
   // first ball
   indexerMove(0);
-  baseTurn(95, 1000);
+  baseTurn(94, 1000);
   delay(5);
-  baseMove(-22.7,1000);
+  baseMove(-22.8,1000);
   // second goal
   delay(5);
   baseTurn(-40,1000);
@@ -64,7 +64,7 @@ void red1(){
   // third goal
   baseMove(-32,1000);
   baseTurn(46, 1000);
-  baseMove(-70, 3000);
+  baseMove(-66, 3000);
   intakeMove(0);
   baseTurn(-139, 1000);
   baseMove(32, 1000);
